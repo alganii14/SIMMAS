@@ -1,0 +1,112 @@
+.nav-link {
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #fbc50b;
+    left: 0;
+    bottom: -5px;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    width: 100%;
+}
+
+.navbar-links li a {
+    transition: color 0.3s ease;
+}
+
+.navbar-links li a:hover,
+.navbar-links li a.active {
+    color: #fbc50b;
+}
+
+.community {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.community:hover {
+    transform: translateY(-5px);
+}
+
+.community figure {
+    position: relative;
+    margin: 0;
+}
+
+.community-text {
+    padding: 1.5rem;
+    background: #fff;
+}
+
+.community-text a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.community-text a:hover {
+    color: #fbc50b;
+}
+
+.community-text p {
+    color: #666;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Ensure consistent spacing */
+.gap {
+    padding: 4rem 0;
+}
+
+/* Add spacing between grid items */
+.g-4 {
+    --bs-gutter-y: 1.5rem;
+}
+
+/* Logo Styles */
+.logo {
+    max-width: 500px; /* Batasi lebar maksimum logo container */
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+    max-height: 75px; /* Batasi tinggi maksimum logo */
+    object-fit: contain; /* Pastikan logo tetap proporsional */
+}
+
+/* Logo di mobile nav */
+.res-log {
+    max-width: 150px; /* Ukuran lebih kecil untuk mobile */
+}
+
+.res-log img {
+    width: 100%;
+    height: auto;
+    max-height: 50px;
+    object-fit: contain;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .logo {
+        max-width: 150px; /* Logo lebih kecil di mobile */
+    }
+
+    .logo img {
+        max-height: 50px;
+    }
+}

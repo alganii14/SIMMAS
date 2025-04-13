@@ -1,0 +1,29 @@
+.atas-nama-row {
+    margin-bottom: 10px;
+}
+
+.is-invalid {
+    border-color: #dc3545 !important;
+}
+
+.invalid-feedback {
+    display: block;
+    color: #dc3545;
+}
+
+
+.btn-hapus {
+    margin-top: 32px;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .atas-nama-row {
+        margin-bottom: 20px;
+    }
+
+    .btn-hapus {
+        margin-top: 0;
+        margin-bottom: 15px;
+    }
+}
